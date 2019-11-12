@@ -1,0 +1,31 @@
+<div class="sy-poc">
+    <span class="sy-fullname" *ngIf="data.fullName">{{data.fullName}}<br></span>
+    <ng-container *ngIf="data.title">{{data.title}}</ng-container>
+    <ng-container *ngIf="data.address">{{data.address}}, <br></ng-container>
+    <ng-container *ngIf="data.address2">{{data.address2}}<br /></ng-container>
+    <ng-container *ngIf="data.city || data.state || data.zip">
+        <ng-container *ngIf="data.city">{{data.city}}, </ng-container>
+        <ng-container *ngIf="data.state">{{data.state}} </ng-container>
+        <ng-container *ngIf="data.zip">{{data.zip}}</ng-container><br>
+    </ng-container>
+    <ng-container *ngIf="data.email">
+        <fa-icon [icon]="['far', 'envelope']" size="16px"></fa-icon>
+        <a href="mailto:{{data.email}}">{{data.email}}</a> <br>
+    </ng-container>
+    <ng-container *ngIf="data.phone">
+        <fa-icon [icon]="['fas', 'phone']" size="16px"></fa-icon>
+
+        {{data.phone}}<br>
+    </ng-container>
+    <ng-container *ngIf="data.phone2">
+        <fa-icon [icon]="['fas', 'phone']" size="16px"></fa-icon>
+        {{data.phone2}}<br>
+    </ng-container>
+    <ng-container *ngIf="data.fax">
+        <fa-icon [icon]="['fas', 'fax']" size="16px"></fa-icon> {{data.fax}}<br>
+    </ng-container>
+    <ng-container *ngIf="data.website">
+        <fa-icon [icon]="['fas', 'globe']" size="16px"></fa-icon>
+        {{data.website}}<br>
+    </ng-container>
+</div>

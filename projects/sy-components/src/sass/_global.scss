@@ -1,0 +1,67 @@
+html {
+    height: 100%;
+}
+
+body {
+    font-size: 14px;
+    margin: 0;
+    background-color: $color-white;
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+body a,
+a:hover,
+a:active {
+    font-family: 'Open Sans', sans-serif !important;
+    color: $color-green;
+    font-weight: bold;
+}
+
+.container-div {
+    max-width: 1200px;
+    margin-left: 10px;
+}
+
+.warn {
+    font-size: 14px;
+    color: $color-red;
+    text-align: center;
+}
+
+.mat-table {
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 14px !important;
+}
+
+.fieldset-color fieldset legend {
+    color: $color-green;
+    font-weight: bold;
+}
+
+.fieldset-color fieldset {
+    border: 2px solid $color-green !important;
+}
+
+// Remove clear button for IE inputs
+::-ms-clear {
+    display: none;
+}
+
+// Remove pseudo-element for password field from IE
+::-ms-reveal {
+    display: none;
+}
+
+.error-msg {
+    margin-top: 10px;
+}
+
+.general-text {
+    word-wrap: break-word;
+    width: 300px;
+}
+
+h3 {
+    color: $color-green;
+    margin-top: 14px;
+}

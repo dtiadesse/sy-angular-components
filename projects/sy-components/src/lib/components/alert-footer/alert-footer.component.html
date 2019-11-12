@@ -1,0 +1,5 @@
+<div class="alert-fixed-footer">
+    <sy-alert *ngFor="let alert of alerts; let i = index" [dismissTimer]="alert.timer" [showClose]="true" [userMustDismiss]="alert.mustDismiss ? alert.mustDismiss : false" [type]="alert.type" [title]="alert.title" [description]="alert.description" [descriptionList]="alert.descriptionList"
+        (dismiss)="dismissFooterAlert(i)">
+    </sy-alert>
+</div>

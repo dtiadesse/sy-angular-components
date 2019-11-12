@@ -1,0 +1,26 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<!-- <dos-header></dos-header> -->
+<div class="tool-bar">
+    <h1>
+        Angular Common Components Demo
+    </h1>
+</div>
+<!-- <button (click)="openDocumentation()">Documentation</button> -->
+<div class="demo-container">
+    <div class="sidenav">
+        <aside>
+            <ul class="link-style" *ngFor="let link of navLinks">
+                <li>
+                    <a [routerLink]="link.path">
+            {{link.label}}
+          </a>
+                </li>
+            </ul>
+        </aside>
+    </div>
+    <div class="container">
+        <router-outlet></router-outlet>
+    </div>
+</div>
+
+<!-- <dos-footer [footerSection2]="footerSection2"></dos-footer> -->

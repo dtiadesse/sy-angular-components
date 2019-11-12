@@ -1,0 +1,12 @@
+<div class="video-container">
+    <h3>{{videoConfig.title}}</h3>
+    <video width="490" [poster]="videoConfig.poster" crossorigin="anonymous" controls [title]="videoConfig.title"
+        #videoPly>
+        <source [src]="videoConfig.videoUrl" type="video/mp4" #videoSrc />
+        <track kind="captions" label="English captions" [src]="videoConfig.captionsUrl" srclang="en" default
+            #videoTrack />
+    </video>
+    <div class="video-description">
+        <p> {{videoConfig.description}}</p>
+    </div>
+</div>

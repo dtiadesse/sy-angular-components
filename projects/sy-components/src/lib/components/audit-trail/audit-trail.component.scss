@@ -1,0 +1,25 @@
+@import '../../../sass/colors';
+.audit-trail {
+    background-color: $color-green-light;
+    min-height: 100px;
+    max-width: 600px;
+    padding: 10px;
+}
+    .audit-trail div label {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+        padding-top:5px;      
+        color: $color-black;  
+    }
+
+    .audit-trail div label:first-child {
+        width:150px; 
+        font-weight: bold;
+        display:inline-table;
+    }
+    
+    .audit-trail div a{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+        padding-top:5px;      
+    }

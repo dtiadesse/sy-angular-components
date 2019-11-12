@@ -1,0 +1,36 @@
+<h2>Listbox example with checkbox(multiple) mode</h2>
+<sy-listbox [options]="options" [(ngModel)]="selectItems2" [required]="true">
+</sy-listbox>
+{{selectItems2 |json}}
+
+<h4>HTML</h4>
+<pre>
+    <code>{{codeExample}}</code>
+</pre>
+
+<h4>Script(TS)</h4>
+<pre>
+    <code>{{codeScript}}</code>
+</pre>
+
+<h4>API References</h4>
+<pre>
+  <code>{{apiRefences}}</code>
+</pre>
+
+
+<h2>Listbox example with radio button(single) mode</h2>
+
+<sy-listbox isSingleMode="true" [options]="options1" [(ngModel)]="selectItems1">
+</sy-listbox>
+{{selectItems1 |json}}
+
+<h4>HTML</h4>
+<pre>
+    <code>{{codeExample1}}</code>
+</pre>
+
+<h4>Script(TS)</h4>
+<pre>
+    <code>{{codeScript1}}</code>
+</pre>

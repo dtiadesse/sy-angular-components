@@ -1,0 +1,73 @@
+@import "../../../sass/colors";
+.history-table tr td {
+  text-align: left;
+  border: 1px $dark-brown solid;
+  padding: 5px;
+}
+
+.history-table tr th {
+  text-align: left;
+  border: 1px $color-black solid;
+  background-color: $color-transparent;
+  padding: 5px;
+}
+
+.history-table thead tr th {
+  text-align: left;
+  min-height: 20px;
+  border: 1px $dark-brown solid;
+  color: $color-white;
+  margin-right: 5px;
+}
+.history-table tr:nth-child(even) {
+  background-color: $light-brown;
+  border: 1px solid $dark-brown;
+}
+.history-table-date-column {
+  min-width: 100px;
+  text-align: left;
+}
+.history-table-change-column {
+  min-width: 300px;
+  text-align: left;
+}
+.history-table-change-column div {
+  margin-top: 8px;
+}
+.history-table-change-column button {
+  min-height: 10px;
+}
+
+fieldset {
+  max-width: 600px;
+}
+
+table {
+  border: 2px solid $dark-brown;
+  border-collapse: collapse;
+}
+
+.icon-end {
+  text-align: end;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+fa-icon {
+  color: $color-white;
+  text-align: left;
+  margin: 10px;
+}
+
+.history-text-container {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.icon-end{
+  text-align: end;
+}

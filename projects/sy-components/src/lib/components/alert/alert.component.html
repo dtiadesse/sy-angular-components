@@ -1,0 +1,22 @@
+<div [ngClass]="[selectedType]">
+  <div class="alert-container">
+    <div class="alert-body">
+      <fa-icon [icon]="selectedIcon" size="lg"></fa-icon>
+      <span class="alert-header">{{title}}</span>
+      <span class="sr-only">{{this.types[this.type]?.sr}}</span>
+      <span class="float-right" *ngIf="showClose" (click)="closeAlert()" tabindex="0" (keyup.enter)="closeAlert()">
+        <fa-icon icon="times-circle" size="1x">
+        </fa-icon>
+      </span>
+    </div>
+    <div class="alert-body">
+      <p *ngIf="description">{{description}}</p>
+      <div *ngIf="descriptionList?.length > 0">
+        <ul *ngFor="let desc of descriptionList" type="disc">
+          <li>{{desc}}</li>
+        </ul>
+      </div>
+      <ng-content select="[main-content]"></ng-content>
+    </div>
+  </div>
+</div>

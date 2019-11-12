@@ -1,0 +1,16 @@
+@import "../../../sass/colors";
+
+.bar .fill {
+    height: 1rem;
+    border-radius: 4px;
+}
+
+.bar .fill {
+    background-color: $color-primary;
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
+}
+
+.bar .fill.animated {
+    transition: 0.4s linear;
+    transition-property: width;
+}

@@ -1,0 +1,22 @@
+<div class="audit-trail">
+  <div>
+    <label>Last Modified :</label>
+    <label> {{lastModified  | date : dateFormat }}</label>
+  </div>
+  <div>
+    <label>Last Modified By :</label>
+    <label>
+      <a href="mailto:{{lastModifiedByEmail}}">{{lastModifiedByEmail}}</a>
+    </label>
+  </div>
+  <div>
+    <label>Created :</label>
+    <label>{{created |  date : dateFormat}}</label>
+  </div>
+  <div>
+    <label>Created By :</label>
+    <label>
+      <a href="mailto:{{createdByEmail}}">{{createdByEmail}}</a>
+    </label>
+  </div>
+</div>

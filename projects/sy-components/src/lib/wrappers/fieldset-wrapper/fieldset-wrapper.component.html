@@ -1,0 +1,39 @@
+<div [class.sy-input-error]="displayErrors()">
+
+    <fieldset class="fieldset">
+
+        <legend *ngIf="label || required" [class.required-text]="displayErrors()">
+            {{label}}
+            <span *ngIf="required" class="required-text">
+        Required
+      </span>
+            <ng-content select="[label-right]"></ng-content>
+        </legend>
+
+        <div #hintContainer *ngIf="hint" class="sy-form-hint" aria-live="polite" [innerHTML]="hint" [style.overflow]="setOverflow()" [style.height]="setHeight()">
+        </div>
+
+        <div *ngIf="showToggle" class="toggle-more">
+            <a href="javascript:void(0)" (click)="toggleHint(toggleOpen)">
+        {{ toggleOpen?"less":"more"}}
+      </a>
+        </div>
+
+        <span *ngIf="displayErrors()" class="usa-input-error-message" aria-live="assertive">
+      <ng-container *ngIf="displayErrorList() else single">
+        <ul>
+          <li *ngFor="let msg of errorMessages">
+            {{ msg }}
+          </li>
+        </ul>
+      </ng-container>
+      <ng-template #single>
+        {{ errorMessages[0] }}
+      </ng-template>
+    </span>
+
+        <ng-content></ng-content>
+
+    </fieldset>
+
+</div>

@@ -1,0 +1,85 @@
+@import "../../../sass/colors";
+div {
+  background: $color-white;
+}
+.float-right {
+  float: right
+}
+.alert-body {
+  padding: 10px 5px;
+  fa-icon {
+    margin-right: 4px;
+    margin-left: 2px;
+  }
+}
+
+.alert-error {
+  .alert-body,
+  .closeIcon {
+    border-left: 15px solid $alertErrorColor !important;
+    fa-icon {
+      color: $alertErrorColor !important;
+    }
+  }
+  .alert-header {
+    color: $alertErrorColor;
+  }
+}
+.alert-info {
+  .alert-body,
+  .closeIcon {
+    border-left: 10px solid $alertInfoColor;
+    fa-icon {
+      color: $alertInfoColor;
+    }
+  }
+  .alert-header {
+    color: $alertInfoColor;
+  }
+}
+.alert-success {
+  .alert-body,
+  .closeIcon {
+    border-left: 10px solid $alertSuccessColor;
+    fa-icon {
+      color: $alertSuccessColor;
+    }
+  }
+  .alert-header {
+    color: $alertSuccessColor;
+  }
+}
+.alert-warning {
+  .alert-body,
+  .closeIcon {
+    border-left: 10px solid $alertWarningColor;
+    fa-icon {
+      color: $alertWarningColor;
+    }
+  }
+  .alert-header {
+    color: $alertWarningColor;
+  }
+}
+.alert-div {
+  display: flex;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  max-width: 50em;
+  font-size: 16px;
+}
+
+.alert-header {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 5px;
+  padding-left: 5px;
+}
+
+.alert-container {
+  margin-bottom: 15px;
+  margin-top: 15px;
+  max-width: 50em;
+  font-size: 16px;
+  box-shadow: 2px 1px 1px 1px $color-grey-dark;
+}

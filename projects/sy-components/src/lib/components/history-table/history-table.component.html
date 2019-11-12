@@ -1,0 +1,41 @@
+<fieldset>
+  <legend>{{historyConfig.title}}</legend>
+  <table class="history-table">
+    <thead>
+      <tr>
+        <th class="history-table-date-column">
+          <div>{{historyConfig.dateHeaderText}}</div>
+        </th>
+        <th class="history-table-change-column history-text-container">
+          <div>{{historyConfig.detailsHeaderText}}</div>
+          <div>
+            <button *ngIf="isExpand" (click)="expand(isExpand)" aria-label="expand more">
+              <fa-icon [icon]="['fas', 'caret-up']" size="2x"></fa-icon>
+            </button>
+            <button *ngIf="!isExpand" (click)="expand(isExpand)" >
+              <fa-icon [icon]="['fas', 'caret-down']" size="2x"></fa-icon>
+              </button> 
+           </div>
+        </th>
+      </tr>
+    </thead>
+    <tbody *ngIf="historyData?.length > 0">
+      <tr *ngFor="let history of historyData">
+        <td>
+          {{history.DateTimeChanged | globaldatetime}}
+        </td>
+        <td>
+          <div *ngIf="isExpand" class="general-text">
+            {{history.SummaryReason}}
+          </div>
+          <div *ngIf="!isExpand" class="general-text">
+            <div>{{history.DetailField}}</div>
+            <div>{{history.DetailOld}}</div>
+            <div>{{history.DetailNew}}</div>
+            <div>{{history.DetailChangedBy}}</div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</fieldset>

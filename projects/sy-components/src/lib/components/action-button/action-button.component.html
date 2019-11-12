@@ -1,0 +1,8 @@
+<button type="button"
+        (click)="actionClicked()"
+        [disabled]="disabled"
+        class="usa-button action-button">
+  <!-- <span [ngClass]="action?.icon"></span>&nbsp; -->
+  <fa-icon [icon]="action?.icon" size="1x"></fa-icon>&nbsp;
+  {{ action?.label }}
+</button>

@@ -1,0 +1,7 @@
+<sy-upload #upload name="additional-documentation" [uploadDeferred]="true" [(ngModel)]="files" (onModelFilesChanges)="onModelFilesChanges.next($event)">
+</sy-upload>
+
+<input placeholder="Select File" accept="pdf/*" (change)="selectFile($event)" type="file" name="agencyName">
+
+<sy-action-button class="action-button" [action]="action" (click)="onSubmitClick()">
+</sy-action-button>
