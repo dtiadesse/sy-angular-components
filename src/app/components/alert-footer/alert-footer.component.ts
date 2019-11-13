@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./alert-footer.component.scss']
 })
 export class AlertFooterComponent {
-  private alerts: any = [];
+  public alerts: any = [];
 
   constructor() { }
   footerAlertModel = {

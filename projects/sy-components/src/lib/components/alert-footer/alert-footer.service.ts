@@ -3,7 +3,7 @@ import { AlertType } from '../../types';
 @Injectable()
 export class AlertFooterService {
 
-  private alerts: any = [];
+  public alerts: any = [];
 
   getAlerts() {
     return this.alerts;

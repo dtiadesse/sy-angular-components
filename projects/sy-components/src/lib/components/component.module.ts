@@ -4,8 +4,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { GlobalDateTime } from '../globaldatetime.pipe';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { CopyClipboardComponent } from './copy-to-clipboard/copy-clipboard.component';
-import { ActionButtonComponent } from '../components/action-button/action-button.component';
-import { AuditTrailComponent } from '../components/audit-trail/audit-trail.component';
+import { ActionButtonComponent } from './action-button/action-button.component';
+import { AuditTrailComponent } from './audit-trail/audit-trail.component';
 import { HistoryTableComponent } from './history-table/history-table.component';
 import { AlertComponent } from './alert/alert.component';
 import { AlertFooterComponent } from './alert-footer/alert-footer.component';
@@ -36,7 +36,8 @@ export const COMPONENT_COMPONENTS = [
     DownloadComponent,
     PointOfContactComponent,
     CopyClipboardComponent,
-    VideoPlayerComponent
+    VideoPlayerComponent,
+    
 ];
 @NgModule({
     imports: [

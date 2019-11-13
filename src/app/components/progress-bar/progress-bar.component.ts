@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ProgressIndicator, ProgressIndicatorType } from 'projects/sy-components/src/lib/components';
 
 @Component({
   selector: 'app-progress-bar',
@@ -9,8 +8,8 @@ import { ProgressIndicator, ProgressIndicatorType } from 'projects/sy-components
 export class ProgressBarComponent implements OnInit {
 
   constructor() { }
-  percentExample: ProgressIndicator = {
-    type: ProgressIndicatorType.Percent,
+  percentExample: any = {
+    type: 'percent',
     min: 0,
     max: 100,
     value: 0,
@@ -23,7 +22,7 @@ export class ProgressBarComponent implements OnInit {
 
   private startPercentage (): void {
     const intervalId = setInterval(
-      (percentExample: ProgressIndicator) => {
+      (percentExample: any) => {
         // Stop interval on completion
         if (percentExample.value === 100) {
           clearInterval(intervalId);
@@ -38,8 +37,8 @@ export class ProgressBarComponent implements OnInit {
     );
   }
 
-  codeScript=`percentExample: ProgressIndicator = {
-    type: ProgressIndicatorType.Percent,
+  codeScript=`percentExample: any = {
+    type: 'percent,
     min: 0,
     max: 100,
     value: 0,
@@ -52,7 +51,7 @@ export class ProgressBarComponent implements OnInit {
 
   private startPercentage (): void {
     const intervalId = setInterval(
-      (percentExample: ProgressIndicator) => {
+      (percentExample: any) => {
         // Stop interval on completion
         if (percentExample.value === 100) {
           clearInterval(intervalId);

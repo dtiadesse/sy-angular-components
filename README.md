@@ -24,14 +24,16 @@ Confirm NPM is available:
 
 <h3 id="sy-angular-components">sy-angular-components</h3>
 
-sy-components is a related package that provides a set of general-purpose components and directives. You'll need to setup your local environment to pull this package in.
+sy-components is a related package that provides a set of general-purpose components and directives. 
+<a href="" target="_blank">Click here to view demos</a>
+You'll need to setup your local environment to pull this package in.
 
 <h4> First time setup & Download from github</h4>
 
 git clone https://github.com/dtiadesse/sy-angular-components
 cd sy-angular-components
 npm install
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `ng serve` for a dev server. Navigate to  `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 <h5>Code scaffolding</h5>
 
