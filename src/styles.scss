@@ -5,3 +5,12 @@ pre code {
     font-size: 14px;
     white-space: pre-wrap !important;
 }
+
+pre {
+    white-space: pre-wrap;
+    width: 60%;
+    padding: 10px;
+    code {
+        white-space: pre-wrap;
+    }
+}
