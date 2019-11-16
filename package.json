@@ -9,7 +9,9 @@
         "lint": "ng lint",
         "e2e": "ng e2e",
         "comp-gen": "compodoc -p src/tsconfig.app.json",
-        "comp-serve": "compodoc -s"
+        "comp-serve": "compodoc -s",
+        "build:pages": "ng build --prod --output-path docs --base-href sy-angular-components"
+
     },
     "private": true,
     "dependencies": {
